@@ -1,5 +1,150 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-image: var(--bg-image);
+  background-position: center;
+  background-attachment: fixed;
+  background-color: var(--bg-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  min-height: 668px;
+  padding: 10px;
+}
+
+.header__theme-menu {
+  justify-self: right;
+  line-height: 100%;
+  color: var(--accent-color);
+}
+
+.header__theme-menu-list {
+  display: grid;
+  gap: 10px;
+  width: 70px;
+}
+
+.header__theme-menu-button {
+  padding: 4px;
+  background-color: transparent;
+  width: 100%;
+  border: 0;
+}
+
+.header__rec {
+  position: absolute;
+  inset: 0 20px auto auto;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  inset-inline-end: 30px;
+  inset-block-start: 11px;
+}
+
+.header__rec::after {
+  position: relative;
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  left: 11px;
+  bottom: 2px;
+}
+
+.decorated-zone::after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+  inset-inline-end: 10px;
+  inset-block-start: 10px;
+}
+
+.decorated-zone::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+  inset-inline-start: 10px;
+  inset-block-end: 10px;
+}
+
+.header__title {
+  font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 83%;
+  color: var(--title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.header__subtitle {
+  font-weight: 700;
+  line-height: 130%;
+  inline-size: 100%;
+}
+
+.title-decor {
+  color: var(--text-color);
+  background-color: var(--accent-color);
+  font-size: 18px;
+}
+
+.main {
+  display: grid;
+  gap: 50px;
+  padding: 40px 10px;
+}
+
+.section-textblock {
+  display: grid;
+  gap: 20px;
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--accent-color);
+}
+
+.section__list-of-tips {
+  margin-top: 10px;
+  display: grid;
+  gap: 20px;
+}
+
+.section__list-of-tips__item {
+  display: grid;
+  gap: 10px;
+}
+
+.card {
+  display: grid;
+  gap: 10px;
+}
+
+.card__text {
+  line-height: 130%;
+  color: #f1b2ce;
+}
+
+@media (width > 668px) {
+  .hesder__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
 }
