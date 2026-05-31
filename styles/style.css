@@ -150,6 +150,10 @@
   gap: 10px;
 }
 
+.card__subtitle {
+  font-weight: 400;
+}
+
 .card__text {
   line-height: 130%;
   color: var(--text-color);
