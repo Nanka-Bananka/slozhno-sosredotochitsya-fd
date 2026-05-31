@@ -5,7 +5,7 @@
   --accent-color: #ff8dcb;
   --title-color: #ffc2e6;
   --subtitle-color: #353430;
-  --text-color: #f1b2ce;
+  --text-color: #353430;
   --text-size: 18px;
   --bold-font-weight: 700;
 }
@@ -18,6 +18,10 @@
   --dekor-color: rgba(53, 52, 48, 0.4);
 }
 
+:root.theme-light .section__title {
+  --accent-color: #353430;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --bg-image: url(../images/cover-image-light.png);
@@ -26,7 +30,7 @@
     --accent-color: #ff8dcb;
     --title-color: #ffc2e6;
     --subtitle-color: #353430;
-    --text-color: #f1b2ce;
+    --text-color: #353430;
     --text-size: 18px;
     --bold-font-weight: 700;
   }
