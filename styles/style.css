@@ -325,6 +325,10 @@
     padding-left: 15px;
   }
 
+  .section-why {
+    column-gap: 12px;
+  }
+
   .section-what {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -343,6 +347,10 @@
 
   .card__what-gadgets {
     grid-column: 3/4;
+  }
+
+  .section-how {
+    column-gap: 12px;
   }
 
   .footer__title {
