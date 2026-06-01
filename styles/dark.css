@@ -6,10 +6,6 @@
   --title-color: #db00ff;
   --subtitle-color: #000028;
   --text-color: #f1b2ce;
-  --text-size: 18px;
-  --bold-font-weight: 700;
-}
-
-:root.theme-dark .header__theme-menu-button:hover {
-  --dekor-color: rgba(255, 0, 112, 0.4);
+  --button-hover-color: rgba(255, 0, 112, 0.4);
+  --section-title-color: #ff0070;
 }
